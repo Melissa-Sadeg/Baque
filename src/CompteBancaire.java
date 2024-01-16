@@ -3,7 +3,7 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class CompteBancaire {
+public  class CompteBancaire {
     private String type;
     private int numeroCompte;
     private ArrayList<Transaction> historiques;
@@ -55,6 +55,46 @@ public class CompteBancaire {
         }
     }
 
+     public void depot(float amount) {
+        if (amount > 0) {
+            // Effectuer le dépôt
+            solde += amount;
+
+            // Ajouter la transaction à l'historique
+            Transaction depot = new Transaction("Dépôt", amount, LocalDate.now());
+            getHistoriques().add(depot);
+
+            System.out.println("Dépôt de " + amount + " effectué avec succès.");
+        } else {
+            System.out.println("Montant invalide pour le dépôt.");
+        }
+    }
+
+
+    public void solde(float amount) {
+        // Vérification du solde actuel
+        System.out.println("Le solde actuel est de : " + getSolde());
+    }
+
+    public float simuler(LocalDate date) {
+
+        // MODIFIER//
+        float tauxInteret = 0.05f;
+        float nouveauSolde = getSolde() * (1 + tauxInteret);
+
+        // Ajouter la simulation à l'historique
+        Transaction simulation = new Transaction("Simulation", nouveauSolde - getSolde(), date);
+        getHistoriques().add(simulation);
+
+        // Mettre à jour le solde avec le résultat de la simulation
+        solde = nouveauSolde;
+
+        // Retourner le nouveau solde simulé
+        return solde;
+    }
+
+
+
     public static void main(String[] args) {
         // Créer une liste vide pour les transactions
         ArrayList<Transaction> transactions = new ArrayList<>();
@@ -70,6 +110,19 @@ public class CompteBancaire {
 
         // Afficher le solde après le retrait
         System.out.println("Solde après retrait: " + compte.getSolde());
+
+        // Effectuer un dépôt
+        compte.depot(200);
+
+        // Afficher le solde après le dépôt
+        System.out.println("Solde après dépôt: " + compte.getSolde());
+
+        // Effectuer une simulation
+        LocalDate dateSimulation = LocalDate.now().plusMonths(1);
+        float soldeSimule = compte.simuler(dateSimulation);
+        System.out.println("Nouveau solde simulé : " + soldeSimule);
+
+
     }
 
 
