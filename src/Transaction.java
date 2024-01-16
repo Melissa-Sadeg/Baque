@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Transaction {
+import java.time.LocalDate;
+
+public class Transaction {
+    private LocalDate date;
 }
