@@ -6,14 +6,14 @@ import java.util.ArrayList;
 public class CompteBancaire {
     private String type;
     private int numeroCompte;
-    private ArrayList<Transactions> historiques;
+    private ArrayList<Transaction> historiques;
     private float plafond;
     private LocalDate date;
     private String rib;
 
     // Constructeur
 
-    public CompteBancaire(String type, int numeroCompte, ArrayList<Transactions> historiques, float plafond, LocalDate date, String rib) {
+    public CompteBancaire(String type, int numeroCompte, ArrayList<Transaction> historiques, float plafond, LocalDate date, String rib) {
         this.type = type;
         this.numeroCompte = numeroCompte;
         this.historiques = historiques;
@@ -25,7 +25,7 @@ public class CompteBancaire {
         return numeroCompte;
     }
 
-    public ArrayList<Transactions> getHistoriques() {
+    public ArrayList<Transaction> getHistoriques() {
         return historiques;
     }
 
