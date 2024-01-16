@@ -7,7 +7,7 @@ public class CompteUser {
     private String Prenom;
     private String Mdp;
     private String email;
-    private ArrayList<CompteBancaires> comptesBancaire;
+    private ArrayList<CompteBancaire> comptesBancaire;
 
     public CompteUser(String Nom ,String Prenom , String mdp, String email) {
         Mdp = mdp;
@@ -22,8 +22,8 @@ public class CompteUser {
         return email;
     }
 
-    public ArrayList<CompteBancaires> getComptesBancaire() {
-        return comptesBancaire;
+    public ArrayList<CompteBancaire> getComptesBancaire() {
+        return this.comptesBancaire;
     }
     // verifie l'entree de la bonne adresse emeil
     public static Boolean bonAdresse(String Email) {
