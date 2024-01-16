@@ -42,12 +42,7 @@ public class CompteUser {
             return true;
 
 
-
-
-
     }
-
-
 
     public static Boolean codeBon(String Mdp) {
         if (Mdp == null || Mdp.length() < 8) {

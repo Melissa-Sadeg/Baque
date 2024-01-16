@@ -8,18 +8,19 @@ public class CompteBancaire {
     private int numeroCompte;
     private ArrayList<Transaction> historiques;
     private float plafond;
-    private LocalDate date;
-    private String rib;
+    private LocalDate dateCreation;
+    private double amount;
+   // private String rib;
 
     // Constructeur
 
-    public CompteBancaire(String type, int numeroCompte, ArrayList<Transaction> historiques, float plafond, LocalDate date, String rib) {
+    public CompteBancaire(String type, int numeroCompte, ArrayList<Transaction> historiques, float plafond, LocalDate date) {
         this.type = type;
         this.numeroCompte = numeroCompte;
         this.historiques = historiques;
         this.plafond = plafond;
-        this.date = date;
-        this.rib = rib;
+        this.dateCreation = date;
+        //this.rib = rib;
     }
     public int getNumeroCompte() {
         return numeroCompte;
@@ -34,8 +35,18 @@ public class CompteBancaire {
     }
 
     public LocalDate getDate() {
-        return date;
+        return dateCreation;
     }
+
+
+
+
+
+
+
+
+
+
 /*
     public void retrait(float amount) {
         // Vérifier si le montant du retrait est inférieur ou égal au solde disponible
