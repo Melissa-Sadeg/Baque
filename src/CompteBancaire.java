@@ -36,22 +36,33 @@ public class CompteBancaire {
     public LocalDate getDate() {
         return date;
     }
-
+/*
     public void retrait(float amount) {
+        // Vérifier si le montant du retrait est inférieur ou égal au solde disponible
+        if (amount > 0 && amount <= plafond) {
 
+            Transaction retrait = new Transaction("Retrait", amount, LocalDate.now());
+
+            // Ajouter la transaction à l'historique
+            historiques.add(retrait);
+
+            // Mettre à jour le solde
+            plafond -= amount;
+
+            System.out.println("Retrait de " + amount + " effectué avec succès.");
+        } else {
+            System.out.println("Montant invalide pour le retrait.");
+        }
     }
 
-    /*public String exporterJson(){
 
-    }*/
 
-    /*  +exporterJson():string
-+exporterRib():string
-+retrait(amount1:float)void {abstract}
-+depot(amount2:float)void {abstract}
-+solde(amount3:float)void
-+simuler(date:LocalDate):float
+public static void main (String[] args ){
+float amount = 10;
+int plafond = 100;
+
+
+}
 */
-
 }
 
