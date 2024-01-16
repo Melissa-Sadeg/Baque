@@ -6,14 +6,14 @@ import java.util.ArrayList;
 public class CompteBancaire {
     private String type;
     private int numeroCompte;
-    private ArrayList<Transactions> historiques;
+    private ArrayList<Transaction> historiques;
     private float plafond;
     private LocalDate date;
     private String rib;
 
     // Constructeur
 
-    public CompteBancaire(String type, int numeroCompte, ArrayList<Transactions> historiques, float plafond, LocalDate date, String rib) {
+    public CompteBancaire(String type, int numeroCompte, ArrayList<Transaction> historiques, float plafond, LocalDate date, String rib) {
         this.type = type;
         this.numeroCompte = numeroCompte;
         this.historiques = historiques;
@@ -25,7 +25,7 @@ public class CompteBancaire {
         return numeroCompte;
     }
 
-    public ArrayList<Transactions> getHistoriques() {
+    public ArrayList<Transaction> getHistoriques() {
         return historiques;
     }
 
@@ -36,22 +36,33 @@ public class CompteBancaire {
     public LocalDate getDate() {
         return date;
     }
-
+/*
     public void retrait(float amount) {
+        // Vérifier si le montant du retrait est inférieur ou égal au solde disponible
+        if (amount > 0 && amount <= plafond) {
 
+            Transaction retrait = new Transaction("Retrait", amount, LocalDate.now());
+
+            // Ajouter la transaction à l'historique
+            historiques.add(retrait);
+
+            // Mettre à jour le solde
+            plafond -= amount;
+
+            System.out.println("Retrait de " + amount + " effectué avec succès.");
+        } else {
+            System.out.println("Montant invalide pour le retrait.");
+        }
     }
 
-    /*public String exporterJson(){
 
-    }*/
 
-    /*  +exporterJson():string
-+exporterRib():string
-+retrait(amount1:float)void {abstract}
-+depot(amount2:float)void {abstract}
-+solde(amount3:float)void
-+simuler(date:LocalDate):float
+public static void main (String[] args ){
+float amount = 10;
+int plafond = 100;
+
+
+}
 */
-
 }
 
