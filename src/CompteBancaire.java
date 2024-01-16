@@ -1,5 +1,7 @@
 
 
+
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
@@ -37,7 +39,7 @@ public  class CompteBancaire {
         return date;
     }
 
-    public void retrait(float amount) {
+    public void Retrait(float amount) {
         // Vérifier si le montant du retrait est inférieur ou égal au solde disponible
         if (amount > 0 && amount <= solde) {
 
@@ -55,7 +57,7 @@ public  class CompteBancaire {
         }
     }
 
-     public void depot(float amount) {
+     public void Depot(float amount) {
         if (amount > 0) {
             // Effectuer le dépôt
             solde += amount;
@@ -71,12 +73,12 @@ public  class CompteBancaire {
     }
 
 
-    public void solde(float amount) {
+    public void Solde(float amount) {
         // Vérification du solde actuel
         System.out.println("Le solde actuel est de : " + getSolde());
     }
 
-    public float simuler(LocalDate date) {
+    public float Simuler(LocalDate date) {
 
         // MODIFIER//
         float tauxInteret = 0.05f;
@@ -95,7 +97,7 @@ public  class CompteBancaire {
 
 
 
-    public static void main(String[] args) {
+    public static void Main(String[] args) {
         // Créer une liste vide pour les transactions
         ArrayList<Transaction> transactions = new ArrayList<>();
 
@@ -106,20 +108,20 @@ public  class CompteBancaire {
         System.out.println("Solde initial: " + compte.getSolde());
 
         // Effectuer un retrait
-        compte.retrait(10);
+        compte.Retrait(10);
 
         // Afficher le solde après le retrait
         System.out.println("Solde après retrait: " + compte.getSolde());
 
         // Effectuer un dépôt
-        compte.depot(200);
+        compte.Depot(200);
 
         // Afficher le solde après le dépôt
         System.out.println("Solde après dépôt: " + compte.getSolde());
 
         // Effectuer une simulation
         LocalDate dateSimulation = LocalDate.now().plusMonths(1);
-        float soldeSimule = compte.simuler(dateSimulation);
+        float soldeSimule = compte.Simuler(dateSimulation);
         System.out.println("Nouveau solde simulé : " + soldeSimule);
 
 
