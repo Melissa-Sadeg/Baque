@@ -15,10 +15,11 @@ public  class CompteBancaire {
 
     // Constructeur
 
-    public CompteBancaire(String type, int numeroCompte, ArrayList<Transaction> historiques, float solde, LocalDate date, String rib) {
+    public CompteBancaire(String type, int numeroCompte, float solde, LocalDate date, String rib) {
         this.type = type;
         this.numeroCompte = numeroCompte;
-        this.historiques = historiques;
+        ArrayList<Transaction> ArrayListe;
+        this.historiques = new ArrayList<Transaction>();
         this.solde = solde;
         this.date = date;
         this.rib = rib;
@@ -94,15 +95,12 @@ public  class CompteBancaire {
         // Retourner le nouveau solde simulé
         return solde;
     }
-
-
-
-    public static void Main(String[] args) {
+    public static void main(String[] args) {
         // Créer une liste vide pour les transactions
         ArrayList<Transaction> transactions = new ArrayList<>();
 
         // Créer un nouveau compte bancaire
-        CompteBancaire compte = new CompteBancaire("Compte Courant", 123456, transactions, 1000, LocalDate.now(), "123456789");
+        CompteBancaire compte = new CompteBancaire("Compte Courant", 123456, 1000, LocalDate.now(), "123456789");
 
         // Afficher le solde initial
         System.out.println("Solde initial: " + compte.getSolde());
@@ -124,10 +122,7 @@ public  class CompteBancaire {
         float soldeSimule = compte.Simuler(dateSimulation);
         System.out.println("Nouveau solde simulé : " + soldeSimule);
 
-
     }
-
-
 
 }
 
