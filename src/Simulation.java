@@ -1,8 +1,6 @@
 import java.time.LocalDate;
 import java.util.Scanner;
-
 public class Simulation {
-
     public static void AfficheMenu() {
         System.out.print("Veuillez choisir une option\n"
                 + "--c: Création d'un compte Bancaire\n" +
@@ -40,7 +38,7 @@ public class Simulation {
 
         // Appel de la méthode saisirSoldeInitial avec le type de compte choisi
         solde = saisirSoldeInitial(type);
-        System.out.println("Le compte que vous avez choisi est " + type + " avec un solde initial de " + solde + " euros." +"le compte est creer");
+        System.out.println("Le compte que vous avez choisi est " + type + " avec un solde initial de " + solde + " euros." + "le compte est creer");
     }
 
     public static double saisirSoldeInitial(String typeCompte) {
@@ -100,6 +98,16 @@ public class Simulation {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
