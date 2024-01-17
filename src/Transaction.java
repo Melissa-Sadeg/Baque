@@ -4,6 +4,7 @@ public class Transaction {
     private String type;
     private float montant;
     private LocalDate date;
+    private int numeroCompte;
 
     // Constructeur
 

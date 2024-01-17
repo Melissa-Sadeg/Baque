@@ -1,0 +1,93 @@
+[
+  {
+    "type": "virement",
+    "date": "16/01/2023",
+    "montant": "50",
+    "numCompte": "12343241"
+  },
+  {
+    "type": "depot",
+    "date": "17/01/2023",
+    "montant": "75",
+    "numCompte": "98765432"
+  },
+  {
+    "type": "retrait",
+    "date": "18/01/2023",
+    "montant": "30",
+    "numCompte": "56789012"
+  },
+  {
+    "type": "virement",
+    "date": "19/01/2023",
+    "montant": "120",
+    "numCompte": "34567890"
+  },
+  {
+    "type": "depot",
+    "date": "20/01/2023",
+    "montant": "90",
+    "numCompte": "87654321"
+  },
+  {
+    "type": "retrait",
+    "date": "21/01/2023",
+    "montant": "40",
+    "numCompte": "23456789"
+  },
+  {
+    "type": "virement",
+    "date": "22/01/2023",
+    "montant": "60",
+    "numCompte": "65432109"
+  },
+  {
+    "type": "depot",
+    "date": "23/01/2023",
+    "montant": "85",
+    "numCompte": "10987654"
+  },
+  {
+    "type": "retrait",
+    "date": "24/01/2023",
+    "montant": "25",
+    "numCompte": "89012345"
+  },
+  {
+    "type": "virement",
+    "date": "25/01/2023",
+    "montant": "110",
+    "numCompte": "54321098"
+  },
+  {
+    "type": "depot",
+    "date": "26/01/2023",
+    "montant": "70",
+    "numCompte": "43210987"
+  },
+  {
+    "type": "retrait",
+    "date": "27/01/2023",
+    "montant": "35",
+    "numCompte": "32109876"
+  },
+  {
+    "type": "virement",
+    "date": "28/01/2023",
+    "montant": "80",
+    "numCompte": "21098765"
+  },
+  {
+    "type": "depot",
+    "date": "29/01/2023",
+    "montant": "95",
+    "numCompte": "09876543"
+  },
+  {
+    "type": "retrait",
+    "date": "30/01/2023",
+    "montant": "45",
+    "numCompte": "87654321"
+  }
+]
+

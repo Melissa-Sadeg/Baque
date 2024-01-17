@@ -24,6 +24,7 @@ public  class CompteBancaire {
         this.date = date;
         this.rib = rib;
     }
+
     public int getNumeroCompte() {
         return numeroCompte;
     }
@@ -58,7 +59,7 @@ public  class CompteBancaire {
         }
     }
 
-     public void Depot(float amount) {
+    public void Depot(float amount) {
         if (amount > 0) {
             // Effectuer le dépôt
             solde += amount;
@@ -95,6 +96,7 @@ public  class CompteBancaire {
         // Retourner le nouveau solde simulé
         return solde;
     }
+
     public static void main(String[] args) {
         // Créer une liste vide pour les transactions
         ArrayList<Transaction> transactions = new ArrayList<>();
@@ -124,5 +126,10 @@ public  class CompteBancaire {
 
     }
 
+    public String getType() {
+        return type;
+    }
 }
+
+
 
