@@ -30,7 +30,6 @@
     },
     {
         "numeroCompte": "7602 4989 2641 3478",
-        "type" : "PEL",
         "historiques": [{
             "date": "2024-01-18",
             "montant": 225,
@@ -38,6 +37,15 @@
         }],
         "dateCreation": "2024-01-18",
         "solde": 225,
+        "type": "PEL",
+        "nom": "SADEG Melissa"
+    },
+    {
+        "numeroCompte": "7466 7600 9264 7062",
+        "historiques": [],
+        "dateCreation": "2024-01-18",
+        "solde": 0,
+        "type": "Courant",
         "nom": "SADEG Melissa"
     }
 ]
