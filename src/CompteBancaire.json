@@ -21,10 +21,15 @@
                 "date": "2024-01-18",
                 "montant": 20,
                 "type": "retrait"
+            },
+            {
+                "date": "2024-01-19",
+                "montant": 4000,
+                "type": "depot"
             }
         ],
         "dateCreation": "2024-01-18",
-        "solde": 1280,
+        "solde": 5280,
         "type": "Livret A",
         "nom": "SADEG Melissa"
     },
@@ -44,6 +49,22 @@
         "numeroCompte": "7466 7600 9264 7062",
         "historiques": [],
         "dateCreation": "2024-01-18",
+        "solde": 0,
+        "type": "Courant",
+        "nom": "SADEG Melissa"
+    },
+    {
+        "numeroCompte": "1349 1617 7574 5279",
+        "historiques": [],
+        "dateCreation": "2024-01-19",
+        "solde": 0,
+        "type": "Courant",
+        "nom": "SADEG Melissa"
+    },
+    {
+        "numeroCompte": "7020 5562 2113 6422",
+        "historiques": [],
+        "dateCreation": "2024-01-19",
         "solde": 0,
         "type": "Courant",
         "nom": "SADEG Melissa"
