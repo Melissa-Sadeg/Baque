@@ -1,94 +1,43 @@
 [
-  {
-    "typeCompteBancaire": "sadeg",
-    "Nom": "melissa",
-    "numeroCompte": "12345678",
-    "rib": "98765432101234"
-  },
-  {
-    "typeCompteBancaire": "exemple",
-    "Nom": "john",
-    "numeroCompte": "87654321",
-    "rib": "12345678901234"
-  },
-  {
-    "typeCompteBancaire": "autre",
-    "Nom": "alice",
-    "numeroCompte": "56789012",
-    "rib": "56789012341234"
-  },
-  {
-    "typeCompteBancaire": "test",
-    "Nom": "bob",
-    "numeroCompte": "34567890",
-    "rib": "98765432109876"
-  },
-  {
-    "typeCompteBancaire": "principal",
-    "Nom": "emily",
-    "numeroCompte": "23456789",
-    "rib": "12345678906543"
-  },
-  {
-    "typeCompteBancaire": "secondaire",
-    "Nom": "david",
-    "numeroCompte": "78901234",
-    "rib": "56789012343210"
-  },
-  {
-    "typeCompteBancaire": "professionnel",
-    "Nom": "sophie",
-    "numeroCompte": "45678901",
-    "rib": "09876543218765"
-  },
-  {
-    "typeCompteBancaire": "perso",
-    "Nom": "alex",
-    "numeroCompte": "89012345",
-    "rib": "54321098765432"
-  },
-  {
-    "typeCompteBancaire": "courant",
-    "Nom": "chris",
-    "numeroCompte": "56789012",
-    "rib": "23456789012345"
-  },
-  {
-    "typeCompteBancaire": "epargne",
-    "Nom": "laura",
-    "numeroCompte": "12345678",
-    "rib": "67890123456789"
-  },
-  {
-    "typeCompteBancaire": "joint",
-    "Nom": "mike",
-    "numeroCompte": "90123456",
-    "rib": "34567890123456"
-  },
-  {
-    "typeCompteBancaire": "entreprise",
-    "Nom": "olivia",
-    "numeroCompte": "34567890",
-    "rib": "78901234567890"
-  },
-  {
-    "typeCompteBancaire": "associatif",
-    "Nom": "charlie",
-    "numeroCompte": "67890123",
-    "rib": "01234567890123"
-  },
-  {
-    "typeCompteBancaire": "special",
-    "Nom": "emma",
-    "numeroCompte": "23456789",
-    "rib": "45678901234567"
-  },
-  {
-    "typeCompteBancaire": "premium",
-    "Nom": "daniel",
-    "numeroCompte": "78901234",
-    "rib": "89012345678901"
-  }
+    {
+        "numeroCompte": "2749 2347 2846 1904",
+        "historiques": [
+            {
+                "date": "2024-01-18",
+                "montant": 1000,
+                "type": "depot"
+            },
+            {
+                "date": "2024-01-18",
+                "montant": 100,
+                "type": "depot"
+            },
+            {
+                "date": "2024-01-18",
+                "montant": 200,
+                "type": "depot"
+            },
+            {
+                "date": "2024-01-18",
+                "montant": 20,
+                "type": "retrait"
+            }
+        ],
+        "dateCreation": "2024-01-18",
+        "solde": 1280,
+        "type": "Livret A",
+        "nom": "SADEG Melissa"
+    },
+    {
+        "numeroCompte": "7602 4989 2641 3478",
+        "type" : "PEL",
+        "historiques": [{
+            "date": "2024-01-18",
+            "montant": 225,
+            "type": "depot"
+        }],
+        "dateCreation": "2024-01-18",
+        "solde": 225,
+        "nom": "SADEG Melissa"
+    }
 ]
-
-
